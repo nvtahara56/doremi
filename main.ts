@@ -1,6 +1,6 @@
 basic.forever(function () {
     music.playMelody("C C C D E E C C ", 240)
-    music.playMelody("E E C C D D D - ", 240)
+    music.playMelody("E E C C E E E - ", 240)
     music.playMelody("D D D E F F E D ", 240)
     music.playMelody("F F F F F F - - ", 240)
     music.playMelody("E E E F G G E E ", 240)
