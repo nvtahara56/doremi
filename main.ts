@@ -1,7 +1,17 @@
 let x = 0
 basic.showIcon(IconNames.Sad)
+basic.showString("TARO IS ANGRY.")
+basic.pause(1000)
+basic.showString("HANAKO IS ANGRY　TOO.")
+basic.showIcon(IconNames.Angry)
+basic.pause(1000)
+basic.showString("because")
+basic.showString("different from each other.")
 music.startMelody(music.builtInMelody(Melodies.Dadadadum), MelodyOptions.OnceInBackground)
 basic.pause(5000)
+basic.showString("Even so, if you sing a song together, you can become friends.")
+basic.showString("Let’s　sing!")
+basic.pause(1000)
 for (let index = 0; index < 3; index++) {
     basic.showLeds(`
         . # . # #
@@ -66,12 +76,17 @@ for (let index = 0; index < 3; index++) {
         `)
     music.playMelody("B B B E F G A B ", 240)
     music.playMelody("C5 C5 C5 C5 C5 - C5 B ", 240)
-    basic.showIcon(IconNames.Happy)
+    basic.showIcon(IconNames.Heart)
     music.playMelody("A A F F B B G G ", 240)
     x += 1
     if (x < 3) {
         music.playMelody("C5 C5 B A G F E D ", 240)
     } else {
         music.playMelody("C5 C5 C5 C5 C5 C5 - - ", 240)
+        basic.showIcon(IconNames.Happy)
+        basic.showString("Taro is laughing.")
+        basic.pause(100)
+        basic.showIcon(IconNames.Happy)
+        basic.showString("HANAKO is laughing.")
     }
 }
